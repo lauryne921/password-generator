@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+input {
+  background: #88d8dc;
+  border: solid #636363 1px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+#password-generator {
+  position: relative;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: #88d8dc;
+}
+
+.range{
+	 font-size: 20px;
+}
+
+#taille, #nombre {
+  text-align: left;
+  font-size: 32px;
+  margin: 0 auto 1.2rem;
+  width: 14%;
+}
+
+#password-generator #passwordoutput  {
+  text-align: left;
+  font-size: 40px;
+  margin: 0 auto 20px;
+  width: 100%;
+}
+
+#password-generator   #password-generator  {
+  padding: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+#password-generator  #display-password-length {
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  padding-top: 10px;
+}
+
+ #password-generator .flex {
+  margin: 1rem 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#password-generator .flex input {
+  display: none;
+}
+
+#password-generator .flex input:checked + label {
+  background: #74adb0;
+  transform: scale(1.1);
+}
+
+#password-generator .flex label {
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: .8rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-align: center;
+  display: block;
+  width: 90px;
+  transition: 0.2s ease;
+}
+
+#password-generator button {
+  background-color: white;
+  border: solid #7bc6ca;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+#password-generator button:hover {
+  background-color: #74adb0;
+  color: white;
+  border-radius: 30px;
+}
